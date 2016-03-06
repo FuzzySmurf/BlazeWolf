@@ -10,47 +10,48 @@
     <link rel="stylesheet" href="~/css/site.css"/>
 
 </head>
-<body style="font-family: sans-serif; font-size: 14px;">
-
-    <div id="sidebar">
-        <span id="username"> Alex M. </span>
-        <ul class="nav">
-            <li class="active"><a asp-controller="App" asp-action="Index">Home</a></li>
-            <li><a asp-controller="App" asp-action="About">About</a></li>
-            <li><a asp-controller="App" asp-action="Contact">Contact</a></li>
-        </ul>
-    </div>
-
-<div id="wrapper">
-    <nav class="navbar navbar-inverse">
-        <div class="cotainer-fluid">
-            <ul class="nav navbar-nav navbar-left">
-                <li>
-                    <button id="sidebarToggle" class="btn btn-primary">
-                        <i class="fa fa-angle-left"></i>
-                    </button>
-                </li>
-            </ul>
-            <a> Blaze Wolf </a>
+<body style="font-family: sans-serif; font-size: 14px">
+<div class="row" style="width: 100%">
+    <div class="col-md-6 col-md-offset-3">
+        <div class="header">
+            <img src="~/img/logo_Image.png" alt="HeaderImg" width="100%" height="100%"/>
         </div>
-    </nav>
-    <div id="main" class="container-fluid">
-        <div>
-            @RenderBody()
+        <div style="background-image: url(/img/Content_Bar1.png); width: 100%; height: 100%;">
+            @*<img src="~/img/Content_Bar1.png" alt="ContentBarImg" width="100%" height="100%" />*@
+            <nav id="NavigationBar" class="">
+                <ul>
+                    <li class=""><a asp-controller="App" asp-action="Index">Home</a></li>
+                    <li><a asp-controller="App" asp-action="About">About</a></li>
+                    <li><a asp-controller="App" asp-action="Contact">Contact Us</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
-    <div id="footer" class="container-fluid">
-        <div class="navbar navbar-inverse navbar-fixed-bottom">
-            <h4 class="text-center text-info">&copy; 2016 BlazeWolf Ltd.</h4>
+
+        <div id="wrapper" style="">
+            <div id="main" class="container-fluid" style="background-image: url(/img/BodyImage.png); width: 100%; height: 100%;">
+                <div>
+                    @RenderBody()
+                </div>
+            </div>
+            <div id="footer" class="container-fluid">
+                <div class="navbar navbar-inverse navbar-fixed-bottom">
+                    <h4 class="text-center text-info">&copy; 2016 BlazeWolf Ltd.</h4>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
-    <script type="text/javascript" src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="~/lib/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<environment names="Development">
     <script type="text/javascript" src="~/js/site.js"></script>
+</environment>
+    <environment names="Production,Staging">
+        <script type="text/javascript" src="~/lib/_app/site.js"></script>
+    </environment>
 
-    @RenderSection("Scripts", false)
+@RenderSection("Scripts", false)
 
 </body>
 </html>

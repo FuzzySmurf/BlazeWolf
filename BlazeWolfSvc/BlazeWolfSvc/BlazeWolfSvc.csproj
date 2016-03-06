@@ -50,6 +50,45 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Models\BlazeGame.cs" />
+    <Compile Include="Models\BlazeGamesContent.cs" />
+    <Compile Include="Models\BlazeWolfContext.cs" />
+    <Compile Include="Models\Content.cs" />
+    <Compile Include="Models\ContentSection.cs" />
+    <Compile Include="Models\ContentType.cs" />
+    <Compile Include="Models\DigitalAsset.cs" />
+    <Compile Include="Models\DigitalAssetsSection.cs" />
+    <Compile Include="Models\DigitalAssetType.cs" />
+    <Compile Include="Models\Dimension.cs" />
+    <Compile Include="Models\Document.cs" />
+    <Compile Include="Models\DocumentType.cs" />
+    <Compile Include="Models\GameDetail.cs" />
+    <Compile Include="Models\Genre.cs" />
+    <Compile Include="Models\Mapping\BlazeGameMap.cs" />
+    <Compile Include="Models\Mapping\BlazeGamesContentMap.cs" />
+    <Compile Include="Models\Mapping\ContentMap.cs" />
+    <Compile Include="Models\Mapping\ContentSectionMap.cs" />
+    <Compile Include="Models\Mapping\ContentTypeMap.cs" />
+    <Compile Include="Models\Mapping\DigitalAssetMap.cs" />
+    <Compile Include="Models\Mapping\DigitalAssetsSectionMap.cs" />
+    <Compile Include="Models\Mapping\DigitalAssetTypeMap.cs" />
+    <Compile Include="Models\Mapping\DimensionMap.cs" />
+    <Compile Include="Models\Mapping\DocumentMap.cs" />
+    <Compile Include="Models\Mapping\DocumentTypeMap.cs" />
+    <Compile Include="Models\Mapping\GameDetailMap.cs" />
+    <Compile Include="Models\Mapping\GenreMap.cs" />
+    <Compile Include="Models\Mapping\OurGames_DocumentsMap.cs" />
+    <Compile Include="Models\Mapping\OurGame_DigitalAssetsMap.cs" />
+    <Compile Include="Models\Mapping\PlatformMap.cs" />
+    <Compile Include="Models\Mapping\SectionMap.cs" />
+    <Compile Include="Models\Mapping\SectionTypeMap.cs" />
+    <Compile Include="Models\Mapping\StaffMap.cs" />
+    <Compile Include="Models\OurGames_Documents.cs" />
+    <Compile Include="Models\OurGame_DigitalAssets.cs" />
+    <Compile Include="Models\Platform.cs" />
+    <Compile Include="Models\Section.cs" />
+    <Compile Include="Models\SectionType.cs" />
+    <Compile Include="Models\Staff.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

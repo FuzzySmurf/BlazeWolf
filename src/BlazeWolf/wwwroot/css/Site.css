@@ -1,31 +1,12 @@
 ﻿/*Site.css*/
-/*body {
-     font-family: sans-serif;
-     font-size: 14px;
-     margin: 0;
- }
 
-label {
-    font-weight: bold;
-    display: block;
+body {
+    /*background: -webkit-gradient(linear, left top, left bottom,  from(#0d0e0f), to(#181919)) fixed;
+    background: -moz-linear-gradient(odeg, #0d0e0f, #181919);*/
+    background: -webkit-gradient(linear, left top, left bottom, from(#0d0e0f), to(#181919)) fixed;
+    background: -moz-linear-gradient(odeg, #0d0e0f, #181919);
+    /*background-image: url(/img/Background_image.png);*/
 }
-
-input[type=text], input[type=password], textarea {
-    width: 150px;
-}*/
-
-/*#main {
-    background-color: #eee;
-    margin: 0;
-}
-
-#footer {
-    background-color: #222;
-    color: #eee;
-    padding: 8px 8px;
-    bottom: 0;
-    width: 100%;
-}*/
 
 .headshot {
     max-width: 50px;
@@ -33,40 +14,41 @@ input[type=text], input[type=password], textarea {
     padding: 3px;
 }
 
-.menu {
-    font-size: 12px;
-}
-
-    .menu li {
+    #NavigationBar ul {
         list-style-type: none;
+        margin: 0;
+        padding: 0;
+        top: 0;
+        overflow: hidden;
     }
-        .menu li .active {
-            font-weight: bold;
+
+    #NavigationBar li {
+        float: left;
+        border-right: 1px solid #bbb; /*The line divider in navi*/
+    }
+
+    #NavigationBar li:last-child {
+        border-right: none;
+    }
+
+    #NavigationBar li.active {
+        background-color: #4caf50   /*The Active web page user is on*/
+    }
+        #NavigationBar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
         }
 
-#sidebar {
-    background: #2a2c36;
-    color: #eee;
-    position: fixed;
-    height: 100%;
-    width: 250px;
-    overflow: hidden;
-    left: 0;
-    margin: 0;
-    transition: left ease .25s;
-}
-
-    #sidebar.hide-sidebar {
-        left: -250px;
-        transition: left ease .25s;
-    }
+        #NavigationBar li a:hover {
+            background-color: #111;
+            opacity: .2;
+        }
 
 #wrapper {
-    margin: 0 0 0 250px;
+    margin: 0 0 0 0;
     transition: margin-left ease .25s;
+    color: white;
 }
-    
-    #wrapper.hide-sidebar {
-        margin-left: 0;
-        transition: margin-left ease .25s;
-    }

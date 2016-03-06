@@ -40,12 +40,20 @@ namespace BlazeWolf
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app) {
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env) {
 #region Using Static Files for Root
             //This is removed, so that MVC will be in charge of all file types instead
             //of the root directory.
             //app.UseDefaultFiles(); 
 #endregion
+
+            //if (env.IsDevelopment())
+            //{
+
+            //}
+            //else
+            //{
+            //}
 
             app.UseStaticFiles();
             app.UseMvc(config =>
