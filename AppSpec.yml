@@ -23,7 +23,7 @@ os: windows
 #   "files" section altogether. A blank or incomplete "files" section
 #   may cause associated deployments to fail.
 files:
-  - source: .\test.txt
+  - source: .\src\BlazeWolf\
     destination: c:\inetpub\wwwroot
 #  - source:
 #    destination:
