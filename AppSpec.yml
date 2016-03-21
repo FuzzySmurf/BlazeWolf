@@ -23,8 +23,8 @@ os: windows
 #   "files" section altogether. A blank or incomplete "files" section
 #   may cause associated deployments to fail.
 files:
-  - source: .\src\BlazeWolf\
-    destination: c:\inetpub\wwwroot
+  - source: .\artifacts\bin\BlazeWolf\Release\PublishOutput\
+    destination: c:\inetpub\
 #  - source:
 #    destination:
 # For deployments to Amazon Linux, Ubuntu Server, or RHEL instances,

@@ -54,8 +54,8 @@ namespace BlazeWolf
             //else
             //{
             //}
-
-            app.UseStaticFiles();
+            app.UseIISPlatformHandler();
+            //app.UseStaticFiles();
             app.UseMvc(config =>
             {
                 config.MapRoute(
