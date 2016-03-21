@@ -49,12 +49,11 @@ namespace BlazeWolf
 
             //if (env.IsDevelopment())
             //{
-
             //}
             //else
             //{
             //}
-            app.UseIISPlatformHandler();
+
             //app.UseStaticFiles();
             app.UseMvc(config =>
             {
