@@ -1,0 +1,54 @@
+﻿/*Site.css*/
+
+body {
+    /*background: -webkit-gradient(linear, left top, left bottom,  from(#0d0e0f), to(#181919)) fixed;
+    background: -moz-linear-gradient(odeg, #0d0e0f, #181919);*/
+    background: -webkit-gradient(linear, left top, left bottom, from(#0d0e0f), to(#181919)) fixed;
+    background: -moz-linear-gradient(odeg, #0d0e0f, #181919);
+    /*background-image: url(/img/Background_image.png);*/
+}
+
+.headshot {
+    max-width: 50px;
+    border: 1px solid #222;
+    padding: 3px;
+}
+
+    #NavigationBar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        top: 0;
+        overflow: hidden;
+    }
+
+    #NavigationBar li {
+        float: left;
+        border-right: 1px solid #bbb; /*The line divider in navi*/
+    }
+
+    #NavigationBar li:last-child {
+        border-right: none;
+    }
+
+    #NavigationBar li.active {
+        background-color: #4caf50   /*The Active web page user is on*/
+    }
+        #NavigationBar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        #NavigationBar li a:hover {
+            background-color: #111;
+            opacity: .2;
+        }
+
+#wrapper {
+    margin: 0 0 0 0;
+    transition: margin-left ease .25s;
+    color: white;
+}
