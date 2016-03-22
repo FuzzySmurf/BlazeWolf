@@ -49,12 +49,14 @@ namespace BlazeWolf
 
             //if (env.IsDevelopment())
             //{
+
             //}
             //else
             //{
             //}
 
-            //app.UseStaticFiles();
+            app.UseIISPlatformHandler();
+            app.UseStaticFiles();
             app.UseMvc(config =>
             {
                 config.MapRoute(
