@@ -8,7 +8,7 @@ namespace BlazeWolfSvc.Models
     {
         static BlazeWolfContext()
         {
-            Database.SetInitializer<BlazeWolfContext>(null);
+            Database.SetInitializer<BlazeWolfContext>(new CreateDatabaseIfNotExists<BlazeWolfContext>());
         }
 
         public BlazeWolfContext()
