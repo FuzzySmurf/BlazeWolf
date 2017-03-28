@@ -28,6 +28,11 @@ namespace BlazeWolf.Controllers.Web {
             return View();
         }
 
+        //Policy Page
+        public IActionResult NightBearPolicy() {
+            return View();
+        }
+
         [HttpPost]
         public IActionResult Contact(ContactViewModel model) {
             if (ModelState.IsValid) {

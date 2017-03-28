@@ -28,6 +28,7 @@ namespace BlazeWolf.Controllers.Web {
             return View();
         }
 
+        //Policy Page
         public IActionResult NightBearPolicy() {
             return View();
         }
